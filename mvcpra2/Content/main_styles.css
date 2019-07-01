@@ -30,18 +30,14 @@ p {
     float: right;
 }
 
-.navbarcustom {
-    display: flex;
+.nav {
     background-color: rgb(210, 210, 215);
     font-weight: bold;
-    text-shadow: 0.05em 0.05em #888;
 }
 
-.navbarcustom a {
-    font-size: 1.2rem;
+.nav a {
+    font-size: 1rem;
     color: #333;
-    padding: 0 5px;
-    line-height: 15px;
 }
 
 .navbarcustom a:hover {
@@ -58,5 +54,5 @@ p {
 }
 
 .jumbotron {
-    background-color: rgb(0, 0, 0, 0) !important;
+    background-color: rgb(255,255 ,255 ,0) !important;
 }
