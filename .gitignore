@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+*/dist
+*/App_Data
+*/App_Start
+*/bin
+*/fonts
+*/obj
+/packages
+/.vs
+
+*.csproj
+*.csproj.user
+
+*.sln
