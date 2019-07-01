@@ -21,6 +21,10 @@ namespace mvcpra2.Controllers
         {
             return View();
         }
+        public ActionResult Works()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
             return View();
