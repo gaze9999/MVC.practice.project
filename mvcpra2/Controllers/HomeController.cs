@@ -30,4 +30,20 @@ namespace mvcpra2.Controllers
             return View();
         }
     }
+
+    public class WorksController : Controller
+    {
+        public ActionResult Games()
+        {
+            return View();
+        }
+        public ActionResult Python()
+        {
+            return View();
+        }
+        public ActionResult Web()
+        {
+            return View();
+        }
+    }
 }

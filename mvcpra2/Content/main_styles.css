@@ -12,6 +12,12 @@ p {
     line-height: 26px;
 }
 
+.projects {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+
 .title {
     color: rgb(240, 180, 152);
     background-image: url("/image/background/bg.png");
@@ -35,10 +41,10 @@ p {
     font-weight: bold;
 }
 
-.nav a {
-    font-size: 1rem;
-    color: #333;
-}
+    .nav a {
+        font-size: 1rem;
+        color: #333;
+    }
 
 .navbarcustom a:hover {
     color: rgb(120, 110, 110);
@@ -54,5 +60,5 @@ p {
 }
 
 .jumbotron {
-    background-color: rgb(255,255 ,255 ,0) !important;
+    background-color: rgb(255,255,255,0) !important;
 }
