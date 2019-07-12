@@ -14,42 +14,52 @@
 </head>
 
 <body>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function Works() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsById("myDropdown");
+                if (dropdowns.classList.contains('show')) {
+                    dropdowns.classList.remove('show');
+                }
+            }
+        }
+    </script>
 
     <div class="title">
         <h1>Gazelle Studio</h1>
         <h3>It just a simple project page.</h3>
     </div>
 
-    <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" href="/Home/Index" data-toggle="pill" role="tab" aria-selected="true">首頁</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/Home/About" data-toggle="pill" role="tab" aria-selected="true">關於</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/Home/Project" data-toggle="pill" role="tab" aria-selected="true">計畫</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/Home/Works" role="button" aria-haspopup="true" aria-expanded="false">作品</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="/Works/Python">Python</a>
-                <a class="dropdown-item" href="/Works/Web">Webs</a>
-                <a class="dropdown-item" href="/Works/Games">Games</a>
+    <div class="nav">
+        <a href="/Home/Index">首頁</a>
+        <a href="/Home/About">關於</a>
+        <a href="/Home/Project">計畫</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="Works()">作品<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="/Works/Python">Python</a>
+                <a href="/Works/Web">Webs</a>
+                <a href="/Works/Games">Games</a>
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/Home/Contact" data-toggle="pill" role="tab" aria-selected="true">連絡方式</a>
-        </li>
-    </ul>
+        </div>
+        <a href="/Home/Contact">連絡</a>
+    </div>
 
-    <div class="container container-fluid body-content">
+    <div>
         @RenderBody()
         <hr />
         <footer class="footer">
             <p>2019 - Made by Gazelle</p>
         </footer>
     </div>
+
 
 </body>
 </html>
